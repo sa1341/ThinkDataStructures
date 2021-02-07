@@ -31,6 +31,7 @@ public class SelectionSort {
 				lowIndex = i;
 			}
 		}
+		System.out.println("lowIndex: " + lowIndex);
 		return lowIndex;
 	}
 
@@ -41,6 +42,7 @@ public class SelectionSort {
 		for (int i = 0; i < array.length; i++) {
 			int j = indexLowest(array, i);
 			swapElements(array, i, j);
+			System.out.println(Arrays.toString(array));
 		}
 	}
 
@@ -50,6 +52,7 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		int[] array = {2, 5, 6, 1, 3};
 		selectionSort(array);
+		System.out.println("final result");
 		System.out.println(Arrays.toString(array));
 	}
 
